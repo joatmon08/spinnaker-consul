@@ -1,0 +1,3 @@
+terraform.auto.tfvars
+pid_file
+dev.log
