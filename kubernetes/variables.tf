@@ -1,7 +1,7 @@
 variable "consul_helm_version" {
   type        = string
   description = "version of Consul Helm chart"
-  default     = "0.30.0"
+  default     = "0.31.1"
 }
 
 variable "namespace" {
