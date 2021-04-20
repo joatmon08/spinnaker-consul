@@ -9,16 +9,10 @@ prometheus:
   enabled: true
 
 server:
-  # use 1 server
   replicas: 1
-  bootstrapExpect: 1
-  disruptionBudget:
-    enabled: true
-    maxUnavailable: 0
 
 client:
   enabled: true
-  grpc: true
 
 connectInject:
   enabled: true

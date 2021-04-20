@@ -30,7 +30,6 @@ spinnaker-pipelines:
 	spin canary canary-config save --file spinnaker/canary-config.json
 	spin pipeline save -f spinnaker/delete.json
 	spin pipeline save -f spinnaker/deploy.json
-	spin canary canary-config save --file spinnaker/canary-config.json
 
 load-test:
 	k6 run -e UI_ENDPOINT=$(shell cd kubernetes && terraform output -raw ui_endpoint) k6/script.js --duration 60m
