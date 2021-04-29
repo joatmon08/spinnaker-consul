@@ -32,7 +32,7 @@ spinnaker-pipelines:
 	spin pipeline save -f spinnaker/deploy.json
 
 load-test:
-	k6 run -e UI_ENDPOINT=$(shell cd kubernetes && terraform output -raw ui_endpoint) k6/script.js --duration 60m
+	k6 run -e UI_ENDPOINT=$(shell cd kubernetes && terraform output -raw ui_endpoint) k6/script.js --duration 120m
 
 clean-connect:
 	bash shutdown.sh || true
